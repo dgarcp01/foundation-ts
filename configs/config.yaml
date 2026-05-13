@@ -3,13 +3,21 @@ project:
   seed: 42
 
 data:
-  path: null
+  path: data/raw/dataicann
   target: null
   frequency: null
+  window_size: 400
+  stride: 400
 
 model:
-  name: null
-  params: {}
+  name: moment
+  params:
+    model_id: AutonLab/MOMENT-1-base
+    task_name: embedding
+    output_key: embeddings
+    channel_first: false
+    device: cuda
+    model_kwargs: {}
 
 training:
   device: auto
@@ -24,4 +32,3 @@ evaluation:
 hydra:
   run:
     dir: outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
-

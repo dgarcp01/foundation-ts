@@ -6,8 +6,8 @@ channels:
 dependencies:
   - python=3.11
   - pytorch
-  - numpy
-  - pandas
+  - numpy=1.25.2
+  - pandas=2.1.4
   - scikit-learn
   - matplotlib
   - jupyterlab
@@ -15,4 +15,4 @@ dependencies:
   - pip:
       - hydra-core
       - omegaconf
-
+      - momentfm
