@@ -1,0 +1,27 @@
+project:
+  name: foundation-ts
+  seed: 42
+
+data:
+  path: null
+  target: null
+  frequency: null
+
+model:
+  name: null
+  params: {}
+
+training:
+  device: auto
+  batch_size: null
+  max_epochs: null
+  optimizer: null
+  learning_rate: null
+
+evaluation:
+  params: {}
+
+hydra:
+  run:
+    dir: outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
