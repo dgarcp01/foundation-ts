@@ -44,6 +44,7 @@ def main(cfg: DictConfig) -> None:
     model = build_model(cfg.model.name, model_params)
     #pdb.set_trace()
     y = model.predict(x)
+    print(y.shape)
 
     print(f"Project: {cfg.project.name}")
     print(f"Seed: {cfg.project.seed}")

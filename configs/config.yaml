@@ -7,12 +7,12 @@ data:
   target: null
   frequency: null
   window_size: 400
-  stride: 400
+  stride: 100
 
 model:
   name: moment
   params:
-    model_id: AutonLab/MOMENT-1-base
+    model_id: AutonLab/MOMENT-1-large
     task_name: embedding
     output_key: embeddings
     channel_first: false
